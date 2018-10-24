@@ -17,14 +17,17 @@ require __DIR__.'/test.php';
 
   <title>Fake Nudes</title>
 </head>
+<script type="text/javascript">
+  var currentLikes = 0;
+</script>
 <body>
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper ">
-        <form>
+        <form method='get'>
           <div class="input-field">
             <form action="index.php">
-              <input id="search" type="search" name="query" required>
+              <input id="search" type="search" name="query" required >
             </form>
             <label class="label-icon" for="search"><i class="material-icons">search</i></label>
             <i class="material-icons">close</i>
@@ -40,24 +43,40 @@ require __DIR__.'/test.php';
   $i < 3;$i++):
   ?>
 
-  <div class="card large">
+  <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
       <img src="<?= $data['articles'][$i]['urlToImage'];?>">
     </div>
-  <div class="card-content">
+    <div class="card-content">
       <span class="card-title activator grey-text text-darken-4"><?= $data['articles'][$i]['title']; ?><i class="material-icons right">more_vert</i></span>
-      <p><?= $data['articles'][$i]['author']; ?> <?= $data['articles'][$i]['publishedAt']; ?></p>
-  </div>
+      <p><?= $data['articles'][$i]['author']; ?> <?= substr($data['articles'][$i]['publishedAt'], 0, 10); ?></p>
+      <br>
+      <a class ="waves-effect waves-light red btn-floating"><i class="material-icons">favorite_border</i></a>
+    </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
       <p ><?= $data['articles'][$i]['content']; ?></p>
       <p><a href="<?= $data['articles'][$i]['url']; ?>"><i class="material-icons right">add_circle</i></a></p>
     </div>
   </div>
-  <?php
+</div>
+<?php
 
 endfor;
+
 ?>
+
+<script type="text/javascript">
+let likes = 0;
+const button = document.querySelector("a");
+button.addEventListener('click', function () {
+  likes++;
+  localStorage.setItem('likes', likes);
+  currentLikes = localStorage.getItem('likes');
+});
+</script>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script type="text/javascript" src="libraries/p5.js"></script>
 <script type="text/javascript" src="libraries/p5.dom.js"></script>
