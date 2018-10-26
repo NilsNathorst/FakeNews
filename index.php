@@ -51,11 +51,13 @@ require __DIR__.'/test.php';
       <span class="card-title activator grey-text text-darken-4"><?= $data['articles'][$i]['title']; ?><i class="material-icons right">more_vert</i></span>
       <p><?= $data['articles'][$i]['author']; ?> <?= substr($data['articles'][$i]['publishedAt'], 0, 10); ?></p>
       <br>
-      <a class ="waves-effect waves-light red btn-floating"><i class="material-icons">favorite_border</i></a>
+      <a  data-id="<?= 'likecounter'.$i?>"class ="button waves-effect waves-light red btn-floating likebutton"><i class="material-icons">favorite_border</i></a>
+      <span id="<?=  'likecounter'.$i?>">0
 
+      </span>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+      <span class="  card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
       <p ><?= $data['articles'][$i]['content']; ?></p>
       <p><a href="<?= $data['articles'][$i]['url']; ?>"><i class="material-icons right">add_circle</i></a></p>
     </div>
@@ -67,18 +69,7 @@ endfor;
 
 ?>
 
-<script type="text/javascript">
-let likes = 0;
-const button = document.querySelector("a");
-button.addEventListener('click', function () {
-  likes++;
-  localStorage.setItem('likes', likes);
-  currentLikes = localStorage.getItem('likes');
-  console.log(currentLikes);
-});
-</script>
-
-
+<script type="text/javascript" src="index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script type="text/javascript" src="libraries/p5.js"></script>
 <script type="text/javascript" src="libraries/p5.dom.js"></script>
