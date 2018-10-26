@@ -52,6 +52,7 @@ require __DIR__.'/test.php';
       <p><?= $data['articles'][$i]['author']; ?> <?= substr($data['articles'][$i]['publishedAt'], 0, 10); ?></p>
       <br>
       <a class ="waves-effect waves-light red btn-floating"><i class="material-icons">favorite_border</i></a>
+
     </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
@@ -73,6 +74,7 @@ button.addEventListener('click', function () {
   likes++;
   localStorage.setItem('likes', likes);
   currentLikes = localStorage.getItem('likes');
+  console.log(currentLikes);
 });
 </script>
 
