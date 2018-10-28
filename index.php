@@ -18,7 +18,7 @@ require __DIR__.'/test.php';
   <title>Fake Nudes</title>
 </head>
 <script type="text/javascript">
-  var currentLikes = 0;
+var currentLikes = 0;
 </script>
 <body>
   <div class="navbar-fixed">
@@ -31,7 +31,6 @@ require __DIR__.'/test.php';
             </form>
             <label class="label-icon" for="search"><i class="material-icons">search</i></label>
             <i class="material-icons">close</i>
-
           </div>
         </form>
       </div>
@@ -52,13 +51,11 @@ require __DIR__.'/test.php';
       <p><?= $data['articles'][$i]['author'].' for '.$data['articles'][$i]['source']['name'].'<br>'; ?> <?= substr($data['articles'][$i]['publishedAt'], 0, 10); ?></p>
       <br>
       <a  data-id="<?= 'likecounter'.$i?>"class ="button waves-effect waves-light red btn-floating likebutton"><i class="material-icons">favorite_border</i></a>
-      <span id="<?= 'likecounter'.$i?>">0
-
-      </span>
+      <span id="<?= 'likecounter'.$i?>">0</span>
     </div>
     <div class="card-reveal">
-      <span class="  card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-      <p ><?= $data['articles'][$i]['content']; ?></p>
+      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+      <p class="flow-text"><?= $data['articles'][$i]['content']; ?></p>
       <p><a href="<?= $data['articles'][$i]['url']; ?>"><i class="material-icons right">add_circle</i></a></p>
     </div>
   </div>
@@ -71,8 +68,5 @@ endfor;
 
 <script type="text/javascript" src="index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script type="text/javascript" src="libraries/p5.js"></script>
-<script type="text/javascript" src="libraries/p5.dom.js"></script>
-<!-- <script type="text/javascript" src="index.js"></script> -->
 </body>
 </html>

@@ -8,7 +8,6 @@ buttons.forEach(button => {
   counter.textContent = likes;
 
   button.addEventListener('click', function (){
-
     let likes = localStorage.getItem(button.dataset.id);
     likes++;
     counter.textContent = likes;
