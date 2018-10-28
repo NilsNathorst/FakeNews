@@ -49,10 +49,10 @@ require __DIR__.'/test.php';
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4"><?= $data['articles'][$i]['title']; ?><i class="material-icons right">more_vert</i></span>
-      <p><?= $data['articles'][$i]['author']; ?> <?= substr($data['articles'][$i]['publishedAt'], 0, 10); ?></p>
+      <p><?= $data['articles'][$i]['author'].' for '.$data['articles'][$i]['source']['name'].'<br>'; ?> <?= substr($data['articles'][$i]['publishedAt'], 0, 10); ?></p>
       <br>
       <a  data-id="<?= 'likecounter'.$i?>"class ="button waves-effect waves-light red btn-floating likebutton"><i class="material-icons">favorite_border</i></a>
-      <span id="<?=  'likecounter'.$i?>">0
+      <span id="<?= 'likecounter'.$i?>">0
 
       </span>
     </div>
