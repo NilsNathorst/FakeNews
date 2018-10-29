@@ -1,7 +1,5 @@
 <?php
-require __DIR__.'/test.php';
-
-
+require __DIR__.'/newsAPI.php';
 ?>
 
 <!DOCTYPE html>
@@ -13,10 +11,9 @@ require __DIR__.'/test.php';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
-  <title>Fake Nudes</title>
+  <title>!Fake News</title>
 </head>
+
 <script type="text/javascript">
 var currentLikes = 0;
 </script>
@@ -48,7 +45,7 @@ var currentLikes = 0;
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4"><?= $data['articles'][$i]['title']; ?><i class="material-icons right">more_vert</i></span>
-      <p><?= $data['articles'][$i]['author'].' for '.$data['articles'][$i]['source']['name'].'<br>'; ?> <?= substr($data['articles'][$i]['publishedAt'], 0, 10); ?></p>
+      <p><?= $data['articles'][$i]['author'].' , '.$data['articles'][$i]['source']['name'].'<br>'; ?> <?= substr($data['articles'][$i]['publishedAt'], 0, 10); ?></p>
       <br>
       <a  data-id="<?= 'likecounter'.$i?>"class ="button waves-effect waves-light red btn-floating likebutton"><i class="material-icons">favorite_border</i></a>
       <span id="<?= 'likecounter'.$i?>">0</span>
@@ -60,10 +57,9 @@ var currentLikes = 0;
     </div>
   </div>
 </div>
+
 <?php
-
 endfor;
-
 ?>
 
 <script type="text/javascript" src="index.js"></script>
