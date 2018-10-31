@@ -3,7 +3,7 @@ Our first awesome PHP-project! (first year web-dev @ [Yrgo](https://yrgo.se/utbi
  - The assignment was to build a "fake-news" site including authors, articles, publish dates etc.. i chose to get real articles using an API, link below!
 
 ## Motivation
-At first i wanted to build this using PDO/Sqlite3 but it turned out to be abit over my head. But i still wanted to make it abit more interesting than just arrays of articles i'd write myself.
+At first i wanted to build this using PDO/Sqlite3 but i turned out to be in over my head. But i still wanted to make it more interesting than just arrays of articles i would've written myself.
 
 
 ## Tech/framework used
