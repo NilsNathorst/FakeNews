@@ -7,7 +7,7 @@ At first i wanted to build this using PDO/Sqlite3 but it turned out to be abit o
 
 
 ## Tech/framework used
-<b>Built with</b>
+<b>Built in [Atom](https://atom.io/) with</b>
 - [materializecss](https://materializecss.com/)
 - All JS, HTML, and PHP is vanilla.
 
