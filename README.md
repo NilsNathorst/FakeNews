@@ -16,19 +16,19 @@ If you want to use this you will have to get your own API-key head over to:
 [Getting started with newsAPI](https://newsapi.org/docs/get-started)
 
 ## API Reference
-- [newsapi.org](https://newsapi.org/)
+- [newsapi.org](https://newsapi.org/)    
 	A simple API which gives you JSON-data with a bunch of cool articles based on search criteria.
 
 ## How to use?
-For intended usage toggle device toolbar to iPhone X or similar.
-** Also only use "-" (dashes) in place of spaces in your searches!
-Otherwise it crashes **
+For intended usage toggle device toolbar to iPhone X or similar.    
+**Only use "-" (dashes) in place of spaces in your searches!
+Otherwise it crashes**
 ## Credits
 Thanks to:
 - [Per Baltzar](https://github.com/perbaltzar)
 - [Mathias Kristiansson](https://github.com/mrmakr)
 for testing.
-- Also special thanks to [Vincent](https://github.com/vinkla) for being a great teacher / <sub><sup>built the like function.</sup></sub>
+- Special thanks to [Vincent](https://github.com/vinkla) for being a great teacher / <sub><sup>built the like function.</sup></sub>
 
 ## License
 MIT © [Nattfrost](https://github.com/Nattfrost)
