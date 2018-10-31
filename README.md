@@ -16,7 +16,7 @@ If you want to use this you will have to get your own API-key head over to:
 [Getting started with newsAPI](https://newsapi.org/docs/get-started)
 
 ## API Reference
-- [API](https://newsapi.org/)
+- [newsapi.org](https://newsapi.org/)
 	A simple API which gives you JSON-data with a bunch of cool articles based on search criteria.
 
 ## How to use?
