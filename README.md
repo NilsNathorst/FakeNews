@@ -28,7 +28,7 @@ Thanks to:
 - [Per Baltzar](https://github.com/perbaltzar)
 - [Mathias Kristiansson](https://github.com/mrmakr)
 for testing.
-
+Also special thanks to [Vincent](https://github.com/vinkla) for being a great teacher / <sub><sup>built the like function.</sup></sub>
 
 ## License
 MIT © [Nattfrost](https://github.com/Nattfrost)
