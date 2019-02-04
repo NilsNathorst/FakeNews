@@ -1,0 +1,7 @@
+presets: psr2
+risky: false
+
+finder:
+  exclude:
+  - .git
+  - .gitconfig

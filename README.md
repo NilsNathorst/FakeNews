@@ -29,6 +29,9 @@ Thanks to:
 - [Mathias Kristiansson](https://github.com/mrmakr)
 for testing.
 
+Also special thanks to Vincent for being a great teacher / built the like function.
+
+
 
 ## License
 MIT © [Nattfrost](https://github.com/Nattfrost)
